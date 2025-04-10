@@ -1,0 +1,173 @@
+@import url('http://127.0.0.1:5500/td%20rangel/td.html');
+
+:root{
+    --primary-color: #550FED;
+    --secondary-color: #CCB7F9;
+    --black: #1E1E1E;
+    --gray: #716C7C;
+    --border: #C8C2D6;
+    --background: #F2F4F5; 
+}
+
+html{
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+}
+
+/* reset */
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+/* fim do reset */
+
+header{
+    background-color: var(--primary-color);
+    padding: 28px 64px;
+}
+
+    @media(max-width: 1024px){
+        header{
+            padding: 28px 38px;
+        }
+    }
+
+.container{
+    width: 1205px;
+    margin: 0px auto;
+}
+
+    @media(max-width: 1024px){
+        .container{
+            width: 100%;
+        }
+    }
+
+.display-flex{
+    display: flex;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 84px;
+}
+
+nav ul{
+    gap: 72px;
+}
+
+    @media (max-width: 1024px) {
+        nav ul{
+            display: none !important;
+        }
+    }
+
+nav ul li a{
+    color: var(--secondary-color);
+}
+
+nav ul li a:hover{
+    color: var(--black);
+}
+
+nav .god of war{
+    display: none;
+}
+
+    @media (max-width: 1024px){
+        nav .god of war{
+            display: block;
+        }
+    }
+
+nav .god of war span{
+    height: 4px;
+    width: 24px;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+}
+
+div h2{
+    color: white;
+    text-align: center;
+}
+
+form{
+    background-color: white;
+    width: 100%;
+    max-width: 843px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+    @media(max-width: 744px){
+        form{
+            max-width: 100%;
+
+        }
+    }
+
+form button{
+    background-color: var(--black);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+}
+
+form button.pesquisa-texto{
+    padding: 14px 82px;
+}
+
+form button.pesquisa-img{
+    display: none;
+    padding: 8px 16px;
+}
+
+form button.pesquisa-img img{
+    max-width: 24px;
+}
+
+    @media (max-width: 422px){
+        
+        form button.pesquisa-texto{
+            display: none;
+        }
+        
+        form button.pesquisa-img{
+            display: block;
+        }
+    }
+
+form input{
+    background-color: transparent;
+    border: none;
+    flex-grow: 1;
+    
+}
+
+    @media (max-width: 744px){
+        form input{
+            width: 63%;
+        }
+    }
+
+/* Responsive */
